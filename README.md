@@ -33,7 +33,7 @@ terraform apply --auto-approve
 
 ```
 
-##instruction Packer
+## instruction Packer
 
 ```
 cd WP
