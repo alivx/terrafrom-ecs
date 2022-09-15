@@ -31,13 +31,14 @@ terraform validate
 terraform plan
 terraform apply --auto-approve
 
-``
+```
 
-## instruction Packer
+##instruction Packer
 
 ```
 cd WP
 packer init .
 packer build .
 #Make to to update var -> variables.pkr.hcl
+
 ```
