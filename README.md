@@ -19,6 +19,13 @@
         If the WordPress will be used as main website or all the operations, I will create auto scale group with two node behand  load balancer with `EFS` between nodes. and maybe if required creating `lambda function` with `event bridge` to to advance health-check and based on the result it will take action to guaranty the availability
 
 
+Tomorrow we want to put this project into production. What would be your advice and choices to achieve that?
+1. For the high avaliablty ECS will automatically recover unhealthy containers to ensure from desired number of containers.
+2. monitoring: by using newrelic to monitor the app health and performance without complex configration, and for the logs cloudwatch.
+3. Database should be Aroura Mysql DB.
+4. Add EFS for shared media.
+
+
 ## instruction Terraform 
 To apply the infrasture follow the below command
 
