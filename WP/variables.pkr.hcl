@@ -3,7 +3,7 @@ variable "company" {
 }
 
 variable "account_id" {
-  default     = "105360013410"
+  default     = "[account id]"
 }
 
 variable "aws_access_key" {
@@ -28,5 +28,5 @@ variable "playbook_dir" {
 }
 variable "ecr_login_server" {
   type    = string
-  default = "105360013410.dkr.ecr.us-east-1.amazonaws.com"
+  default = "[account id].dkr.ecr.us-east-1.amazonaws.com"
 }

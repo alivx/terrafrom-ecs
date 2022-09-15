@@ -5,7 +5,7 @@ variable "company" {
 
 variable "account_id" {
   type        = string
-  default     = ""
+  default     = "[accountID]"
   description = "AWS account ID"
 }
 
@@ -77,7 +77,12 @@ variable "db_user" {
 
 variable "db_password" {
   type    = string
-  default = ""
+  default = "[password]"
+}
+
+variable "db_name" {
+  type    = string
+  default = "alidb"
 }
 
 variable "container_port" {

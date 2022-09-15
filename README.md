@@ -17,3 +17,27 @@
         if the final goal to use `Wordpress` as static site, I prefer to convert the `wordpress` to static website using plugin or script, then upload it to `S3`
         
         If the WordPress will be used as main website or all the operations, I will create auto scale group with two node behand  load balancer with `EFS` between nodes. and maybe if required creating `lambda function` with `event bridge` to to advance health-check and based on the result it will take action to guaranty the availability
+
+
+## instruction Terraform 
+To apply the infrasture follow the below command
+
+```
+#Make sure to update variables.tf
+cd Terrafrom
+terraform init
+terraform fmt . 
+terraform validate
+terraform plan
+terraform apply --auto-approve
+
+``
+
+## instruction Packer
+
+```
+cd WP
+packer init .
+packer build .
+#Make to to update var -> variables.pkr.hcl
+```

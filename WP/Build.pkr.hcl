@@ -8,7 +8,7 @@ packer {
 }
 
 source "docker" "wp" {
-  image  = "wordpress:php8.1-fpm"
+  image  = "wordpress:php8.1-apache"
   commit = true
 }
 
